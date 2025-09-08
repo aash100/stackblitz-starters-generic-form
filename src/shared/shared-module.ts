@@ -6,6 +6,6 @@ import { MyForm } from './components/my-form/my-form';
 @NgModule({
   declarations: [MyForm],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  // exports: [MyForm],
+  exports: [MyForm],
 })
 export class SharedModule {}
