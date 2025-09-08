@@ -1,0 +1,12 @@
+<p>form-component</p>
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+  <label> Name </label>
+  <input formControlName="name" type="text" />
+  <br />
+  <label> Age </label>
+  <input formControlName="age" type="number" />
+  <br />
+  <label> Address </label>
+  <textarea formControlName="address"></textarea>
+  <button type="submit" [disabled]="myForm.invalid">Submit</button>
+</form>
